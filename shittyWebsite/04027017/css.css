@@ -1,0 +1,47 @@
+html{height:100%;}
+body {background-color: white;color: white; text-align:center;}
+
+.blur {
+  -webkit-animation: blur 3s infinite;
+}
+
+@-webkit-keyframes blur {
+  0%, 100%  { -webkit-filter: blur(0px); }
+  50% { -webkit-filter: blur(10px); }
+}
+
+.hue {
+  -webkit-animation: hue 3s infinite;
+}
+
+@-webkit-keyframes hue {
+  0%, 100%  { -webkit-filter: hue-rotate(0deg); }
+  50% { -webkit-filter: hue-rotate(180deg); }
+}
+
+.saturate {
+  -webkit-animation: saturate 3s infinite;
+}
+
+@-webkit-keyframes saturate {
+  0%, 100%  { -webkit-filter: saturate(none); }
+  50% { -webkit-filter: saturate(10); }
+}
+
+.brightness {
+  -webkit-animation: brightness 3s infinite;
+}
+
+@-webkit-keyframes brightness {
+  0%, 100%  { -webkit-filter: brightness(none); }
+  50% { -webkit-filter: brightness(10); }
+}
+
+.omgwtfbbq {
+  -webkit-animation: omgwtfbbq 3s infinite;
+}
+
+@-webkit-keyframes omgwtfbbq {
+  0%, 100%  { -webkit-filter: blur(0px) brightness(none) hue-rotate(0deg) saturate(none); }
+  50% { -webkit-filter: brightness(10) blur(10px) hue-rotate(180deg) saturate(10); }
+}

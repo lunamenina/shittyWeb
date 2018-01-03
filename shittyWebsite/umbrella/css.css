@@ -1,0 +1,49 @@
+html{height:100%;}
+body {
+    background: linear-gradient(rgba(241, 229, 238, 0.69),rgba(255,255,255,.6));
+    height: 100vh;
+    width: 100vw;
+    padding: 0;
+    margin: 0;
+    overflow:hidden;
+}
+
+.umbrella {
+	position: absolute;
+	bottom: 5%;
+	width: 100%;
+	display: block;
+	justify-content: center;
+}
+
+.umbrella_open {
+	position: absolute;
+	bottom: 5%;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+.umbrella_close {
+	display: none;
+	position: absolute;
+	bottom: 5%;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+.drop {
+  background:-webkit-gradient(linear,0% 0%,0% 100%, from(rgba(170, 198, 243, 0.7)), to(rgba(57, 59, 90, 0.7))  );
+  background: -moz-linear-gradient(top, rgba(13,52,58,1) 0%, rgba(255,255,255,.6) 100%);
+	width:1px;
+	height:75px;
+	position: absolute;
+	bottom:200px;
+	-webkit-animation: fall 1s linear infinite;
+}
+
+/* animate the drops*/
+@-webkit-keyframes fall {
+	to {margin-top:1500px;}
+}
